@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Download } from "lucide-react";
@@ -65,13 +64,14 @@ const PortFolio: React.FC = () => {
           </motion.a>
         </motion.div>
 
-        {/* Right Image */}
+        {/* Right Image + Circles */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="flex justify-center md:justify-end relative"
+          className="flex flex-col justify-center items-center gap-8 relative"
         >
+          {/* Profile Image */}
           <motion.div
             whileHover={{ scale: 1.05, rotate: 2 }}
             transition={{ type: "spring", stiffness: 200 }}
@@ -83,6 +83,30 @@ const PortFolio: React.FC = () => {
               className="object-cover w-full h-full"
             />
           </motion.div>
+
+          {/* Circles Below Image */}
+          <div className="flex gap-6 mt-6">
+            <a
+              href="/Rushi_Sanap_resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="w-28 h-28 flex items-center justify-center rounded-full bg-yellow-500 text-black font-bold border border-black hover:scale-105 transition transform"
+            >
+              Resume
+            </a>
+            <a
+              href="/about"
+              className="w-28 h-28 flex items-center justify-center rounded-full bg-red-500 text-black font-bold border border-black hover:scale-105 transition transform"
+            >
+              Projects
+            </a>
+            <a
+              href="/contact"
+              className="w-28 h-28 flex items-center justify-center rounded-full bg-cyan-400 text-black font-bold border border-black hover:scale-105 transition transform"
+            >
+              Contact
+            </a>
+          </div>
         </motion.div>
       </div>
 

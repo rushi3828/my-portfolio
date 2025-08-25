@@ -1,4 +1,4 @@
-import { FaHeart, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaHeart, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
           <h4 className="font-bold text-lg mb-2">Follow Me</h4>
           <div className="flex space-x-4">
             <a
-              href="www.linkedin.com/in/rushikesh-sanap-384a7025a"
+              href="https://www.linkedin.com/in/rushikesh-sanap-384a7025a"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-blue-600 text-xl"
@@ -38,6 +38,14 @@ export default function Footer() {
               className="text-black hover:text-blue-400 text-xl"
             >
               <FaTwitter />
+            </a>
+            <a
+              href="https://github.com/rushi3828/my-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-gray-800 text-xl"
+            >
+              <FaGithub />
             </a>
           </div>
         </div>
